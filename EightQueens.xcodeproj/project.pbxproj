@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4B7C2019E387FA00DC8DAA /* Domain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C40719DCDA6C003B5AE8 /* Domain.cpp */; };
+		9E4B7C2119E38B9D00DC8DAA /* BFS.h in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5926319E34EC9000F371C /* BFS.h */; };
 		9EB1C3FF19DCD4AC003B5AE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C3FE19DCD4AC003B5AE8 /* main.cpp */; };
 		9EB1C40119DCD4AC003B5AE8 /* EightQueens.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB1C40019DCD4AC003B5AE8 /* EightQueens.1 */; };
+		9EB1C40A19DCE278003B5AE8 /* Domain.h in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C40819DCDA6C003B5AE8 /* Domain.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,9 @@
 		9EB1C3FB19DCD4AC003B5AE8 /* EightQueens */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EightQueens; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB1C3FE19DCD4AC003B5AE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9EB1C40019DCD4AC003B5AE8 /* EightQueens.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = EightQueens.1; sourceTree = "<group>"; };
+		9EB1C40719DCDA6C003B5AE8 /* Domain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Domain.cpp; sourceTree = "<group>"; };
+		9EB1C40819DCDA6C003B5AE8 /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		9ED5926319E34EC9000F371C /* BFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				9EB1C3FE19DCD4AC003B5AE8 /* main.cpp */,
+				9ED5926319E34EC9000F371C /* BFS.h */,
+				9EB1C40719DCDA6C003B5AE8 /* Domain.cpp */,
+				9EB1C40819DCDA6C003B5AE8 /* Domain.h */,
 				9EB1C40019DCD4AC003B5AE8 /* EightQueens.1 */,
 			);
 			path = EightQueens;
@@ -117,7 +126,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4B7C2119E38B9D00DC8DAA /* BFS.h in Sources */,
+				9EB1C40A19DCE278003B5AE8 /* Domain.h in Sources */,
 				9EB1C3FF19DCD4AC003B5AE8 /* main.cpp in Sources */,
+				9E4B7C2019E387FA00DC8DAA /* Domain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +198,8 @@
 		9EB1C40519DCD4AC003B5AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -193,6 +207,8 @@
 		9EB1C40619DCD4AC003B5AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -216,6 +232,7 @@
 				9EB1C40619DCD4AC003B5AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

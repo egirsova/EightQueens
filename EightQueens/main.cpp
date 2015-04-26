@@ -1,18 +1,32 @@
+//  Liza Girsova
+//  CMSC 470: Artificial Intelligence
+//  Professor Krebsbach
 //
+//  EIGHT QUEENS USING BREADTH FIRST SEARCH
 //  main.cpp
-//  EightQueens
-//
-//  Created by Liza Girsova on 10/1/14.
-//  Copyright (c) 2014 CMSC470. All rights reserved.
+//  RouteFinding
 //
 
 #include <iostream>
+#include <stdlib.h>
+#include <vector>
+#include <queue>
+#include <string>
+#include "Domain.h"
+#include "BFS.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
+    cout<<"Algorithm: Breadth-First Search"<<endl;
+    cout<<"Domain: 8-Queens"<<endl<<endl;
+    Domain d;
+    BFS newBFS;
+    newBFS.runBFS(d, NULL, NULL);
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
     return 0;
 }
+
+
 
